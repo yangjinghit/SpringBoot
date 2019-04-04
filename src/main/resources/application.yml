@@ -1,0 +1,23 @@
+server:
+  port: 8885
+spring:
+  profiles:
+    active: dev
+
+---
+server:
+  port: 8886
+spring:
+  profiles: dev
+    
+--- 
+
+server:
+  port: 8886
+spring:
+  profiles: test 
+  
+student:
+  name: yangjing
+  age: ${random.int}
+  email: yangjing@126.com
